@@ -12,6 +12,11 @@ int startX3 = 145;
 int startY3 = 185;
 int endX3 = 0;
 int endY3 = 190;
+
+int topX = 0;
+int topY = 0;
+int botX = 0;
+int botY = 300;
 PImage b;
 
 void setup()
@@ -24,6 +29,8 @@ void setup()
 void draw()
 {
 	image(b, 0, 150,160,160);
+
+
 	stroke((int)(Math.random()*20)+128,(int)(Math.random()*20)+212,(int)(Math.random()*20)+225);
 	while (endX<300) {
 		endX = startX+ (int)(Math.random()*20);
@@ -45,7 +52,10 @@ void draw()
 		line(startX3, startY3, endX3, endY3);
 		startX3=endX3;
 		startY3=endY3;
-		}		
+		}
+
+					
+				}		
 	
 	}
 
